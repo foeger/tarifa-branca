@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarifa Branca para Pequenos Varejos | Cartilha Digital</title>
+  <style>
+    :root {
+      --bg: #f4f7f9;
+      --card: #ffffff;
+      --primary: #0f4c81;
+      --accent: #16a34a;
+      --warn: #d97706;
+      --danger: #dc2626;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      padding: 16px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, #0f4c81, #1d6fa5);
+      color: #fff;
+      padding: 24px 20px;
+      border-radius: 14px;
+      margin-bottom: 16px;
+    }
+    header span {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+    header p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.95;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 17px;
+      color: var(--primary);
+    }
+    .btn {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 13px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 10px;
+      transition: opacity 0.2s;
+    }
+    .btn:last-child { margin-bottom: 0; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-secondary { background: var(--primary); color: #fff; }
+    .btn-outline {
+      background: #fff;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--muted); font-size: 13px; }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .b-ponta { background: var(--danger); }
+    .b-inter { background: var(--warn); }
+    .b-fora { background: var(--accent); }
+    ol {
+      padding-left: 18px;
+      margin: 0;
+    }
+    ol li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .note {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      padding: 10px 12px;
+      font-size: 13px;
+      color: #1e3a8a;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin: 18px 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span>Cartilha de Inteligência Energética • Pequenos Varejos</span>
+      <h1>Adesão à Tarifa Branca</h1>
+      <p>Avalie se a modalidade é vantajosa para o seu comércio, simule seu consumo e siga o passo a passo oficial.</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Simule se sua empresa está apta</h2>
+      <a class="btn btn-primary" href="https://www.enel.com.br/pt-saopaulo/simulador-tarifa-branca.html" target="_blank" rel="noopener">
+        Simulador de Tarifa Branca (Enel)
+      </a>
+      <a class="btn btn-secondary" href="https://cemirim.com.br/simulador/" target="_blank" rel="noopener">
+        Simulador de Consumo de Equipamentos (Cemirim)
+      </a>
+      <div class="note">
+        Disponível para unidades em <strong>baixa tensão (Grupo B)</strong>. Não se aplica a média tensão, iluminação pública, tarifa baixa renda e pré-pagamento.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. Horários tarifários (dias úteis)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Período</th>
+            <th>Horário (Ex.: EDP)</th>
+            <th>Custo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Intermediário 1</td>
+            <td>17h às 18h</td>
+            <td><span class="badge b-inter">Intermediário</span></td>
+          </tr>
+          <tr>
+            <td>Ponta</td>
+            <td>18h às 21h</td>
+            <td><span class="badge b-ponta">Mais caro</span></td>
+          </tr>
+          <tr>
+            <td>Intermediário 2</td>
+            <td>21h às 22h</td>
+            <td><span class="badge b-inter">Intermediário</span></td>
+          </tr>
+          <tr>
+            <td>Fora de Ponta</td>
+            <td>22h às 17h</td>
+            <td><span class="badge b-fora">Mais barato</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <strong>Finais de semana e feriados nacionais:</strong> 24 horas na tarifa <strong>Fora de Ponta</strong>. Confirme os horários exatos com a distribuidora da sua região.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Passo a passo para aderir</h2>
+      <ol>
+        <li><strong>Avalie e simule:</strong> verifique se o consumo do seu comércio ocorre principalmente fora dos horários de ponta e intermediário.</li>
+        <li><strong>Solicite à distribuidora:</strong> entre em contato com a concessionária de energia e peça a adesão à Tarifa Branca.</li>
+        <li><strong>Análise e troca do medidor:</strong> a distribuidora tem até <strong>30 dias</strong> para atender à solicitação e realizar a troca do medidor (sem custo pelo aparelho; adequações no padrão de entrada são por conta do titular).</li>
+        <li><strong>Período de teste na prática:</strong> após a ativação, acompanhe as faturas por alguns meses para confirmar a economia.</li>
+        <li><strong>Retorno à tarifa convencional:</strong> se não compensar, você pode pedir a volta à tarifa convencional a qualquer momento (prazo de atendimento de até <strong>30 dias</strong>).</li>
+        <li><strong>Prazo para nova adesão:</strong> após retornar à tarifa convencional, uma nova adesão à Tarifa Branca só poderá ser feita depois de <strong>180 dias</strong> (ou em prazo menor, a critério da distribuidora).</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>4. Fontes oficiais e mais informações</h2>
+      <a class="btn btn-outline" href="https://www.gov.br/aneel/pt-br/assuntos/tarifas/tarifa-branca" target="_blank" rel="noopener">
+        Portal Oficial da ANEEL — Tarifa Branca
+      </a>
+      <a class="btn btn-outline" href="https://www.edp.com.br/tarifa-branca/" target="_blank" rel="noopener">
+        Guia Tarifa Branca — EDP
+      </a>
+    </section>
+
+    <footer>
+      Material de apoio à cartilha de inteligência energética para pequenos varejos.
+    </footer>
+  </div>
+</body>
+</html>
